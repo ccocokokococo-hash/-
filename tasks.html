@@ -1,0 +1,21 @@
+<!DOCTYPE html><html lang="kk"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Тапсырмалар</title><link rel="stylesheet" href="style.css"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Noto+Sans:wght@400;600;800;900&display=swap" rel="stylesheet"></head><body>
+<header class="top">
+  <nav class="container nav">
+    <a class="brand" href="index.html"><span class="logo">QR</span><span>QazaqRead AI</span></a>
+    <div class="links">
+      <a class="" href="diagnostic.html">Диагностика</a>
+      <a class="" href="orthography.html">Орфография</a>
+      <a class="" href="terms.html">Термин картасы</a>
+      <a class="active" href="tasks.html">Тапсырмалар</a>
+      <a class="" href="teacher.html">Мұғалім кабинеті</a>
+    </div>
+  </nav>
+</header>
+
+<section class="section container">
+  <div class="head"><p class="eyebrow">4-бет</p><h2>Рандом тапсырмалар банкі</h2><p>Диагностикадан кейін оқушы деңгейіне қарай оқу сауаттылығы, орфография және терминдер бойынша жеке тапсырмалар беріледі.</p></div>
+  <div class="grid">
+    <aside class="card"><label>Бағыт</label><select id="taskModule"><option value="reading">Оқу сауаттылығы</option><option value="orthography">Орфографиялық сауаттылық</option><option value="terms">Көнерген және күрделі терминдер</option></select><label>Деңгей</label><select id="taskLevel"><option>Бастапқы</option><option>Орта</option><option>Жоғары</option></select><button class="btn primary full" id="makeTask">Рандом тапсырма</button><button class="btn secondary full" id="makePack">5 тапсырмадан пакет жасау</button></aside>
+    <main class="card"><div id="taskOut" class="list"></div></main>
+  </div>
+</section><footer class="footer"><div class="container">© 2026 QazaqRead AI • қазақ тілі • оқу сауаттылығы • орфографиялық сауаттылық</div></footer><script src="data.js"></script><script src="tasks.js"></script></body></html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html><html lang="kk"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Мұғалім кабинеті</title><link rel="stylesheet" href="style.css"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Noto+Sans:wght@400;600;800;900&display=swap" rel="stylesheet"></head><body>
+<header class="top">
+  <nav class="container nav">
+    <a class="brand" href="index.html"><span class="logo">QR</span><span>QazaqRead AI</span></a>
+    <div class="links">
+      <a class="" href="diagnostic.html">Диагностика</a>
+      <a class="" href="orthography.html">Орфография</a>
+      <a class="" href="terms.html">Термин картасы</a>
+      <a class="" href="tasks.html">Тапсырмалар</a>
+      <a class="active" href="teacher.html">Мұғалім кабинеті</a>
+    </div>
+  </nav>
+</header>
+
+<section class="section container">
+  <div class="head"><p class="eyebrow">5-бет</p><h2>Мұғалім кабинеті</h2><p>Бұл жерде диагностикадан өткен оқушылардың нәтижелері сақталады. Мұғалім оқушының қай бағытта қиналғанын көріп, жеке қолдау жұмысын жоспарлайды.</p></div>
+  <div class="tablebox"><div class="actions"><button class="btn primary" id="loadResults">Сақталған нәтижелерді көру</button><button class="btn secondary" id="demoResults">Демо деректерді жүктеу</button><button class="btn secondary" id="clearResults">Тазалау</button></div><div class="tablewrap"><table><thead><tr><th>Оқушы</th><th>Сынып</th><th>Нәтиже</th><th>Деңгей</th><th>Әлсіз бағыт</th><th>Модуль</th></tr></thead><tbody id="teacherTable"></tbody></table></div></div>
+</section><footer class="footer"><div class="container">© 2026 QazaqRead AI • қазақ тілі • оқу сауаттылығы • орфографиялық сауаттылық</div></footer><script src="data.js"></script><script src="teacher.js"></script></body></html>

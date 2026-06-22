@@ -1,0 +1,38 @@
+<!DOCTYPE html><html lang="kk"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Диагностика</title><link rel="stylesheet" href="style.css"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Noto+Sans:wght@400;600;800;900&display=swap" rel="stylesheet"></head><body>
+<header class="top">
+  <nav class="container nav">
+    <a class="brand" href="index.html"><span class="logo">QR</span><span>QazaqRead AI</span></a>
+    <div class="links">
+      <a class="active" href="diagnostic.html">Диагностика</a>
+      <a class="" href="orthography.html">Орфография</a>
+      <a class="" href="terms.html">Термин картасы</a>
+      <a class="" href="tasks.html">Тапсырмалар</a>
+      <a class="" href="teacher.html">Мұғалім кабинеті</a>
+    </div>
+  </nav>
+</header>
+
+<section class="section container">
+  <div class="head"><p class="eyebrow">1-бет</p><h2>Кешенді оқу диагностикасы</h2><p>Мәтін база ішінен рандом түседі. Оқушының әлсіз дағдысы жауаптарына қарай автоматты анықталады.</p></div>
+  <div class="grid">
+    <aside class="card">
+      <h3>Оқушы деректері</h3>
+      <label>Оқушы аты</label><input id="studentName" value="Айдана">
+      <label>Сынып</label><select id="grade"><option>5-сынып</option><option>6-сынып</option><option selected>7-сынып</option><option>8-сынып</option><option>9-сынып</option></select>
+      <button class="btn primary full" id="startReading">Рандом диагностиканы бастау</button>
+      <p class="note">Тексерілетін дағдылар: негізгі ой, нақты ақпарат, талдау, дәлелді пікір.</p>
+    </aside>
+    <main class="quiz">
+      <span class="tag" id="counter">0 / 0</span>
+      <h3 id="passageTitle">Тест басталмады</h3>
+      <p id="passageMeta" class="tag hidden"></p>
+      <p id="passageText" class="lead">Батырманы басқанда база ішінен мәтін және сұрақтар рандом түрде түседі.</p>
+      <div id="questionBox" class="hidden"><span class="tag" id="skillTag"></span><h3 id="qText"></h3><div id="options" class="answers"></div><button class="btn primary full" id="submit">Жауап беру</button></div>
+      <div id="finish" class="hidden"><h3>Нәтиже дайын</h3><p id="summary"></p><a class="btn secondary" href="teacher.html">Мұғалім кабинетіне өту</a></div>
+    </main>
+  </div>
+</section>
+<section class="section soft"><div class="container result">
+  <div class="card"><h3>Оқушы профилі</h3><div class="score" id="scoreRing"><span id="scoreText">0%</span></div><h3 id="level">Әлі анықталмады</h3><p id="weakText">Диагностикадан кейін әлсіз дағды шығады.</p></div>
+  <div class="card"><h3>Жеке оқу маршруты</h3><div class="route" id="route"><article>Диагностикадан кейін жеке маршрут автоматты құрылады.</article></div><h3>Ата-анаға хабарлама</h3><p id="parentMsg">Нәтижеден кейін нақты жауаптар бойынша автоматты хабарлама шығады.</p></div>
+</div></section><footer class="footer"><div class="container">© 2026 QazaqRead AI • қазақ тілі • оқу сауаттылығы • орфографиялық сауаттылық</div></footer><script src="data.js"></script><script src="app.js"></script></body></html>
